@@ -9,167 +9,206 @@
 </head>
 
 <body class="c27">
-    <p class="c25 title" id="h.af2d0hbx4i0d"><span class="c22 c29">Computer Vision Midterm Study Guide</span></p>
-    <p class="c18 subtitle"><span class="c16 c20">Ibrahim Tigrek</span></p>
-    <p class="c18 subtitle"><span class="c16 c20">Note: still under development</span></p>
-    <h1 class="c26" id="h.abbw2mu8xyt2"><span class="c14">Important Topics</span></h1>
-    <h2 class="c8" id="h.z7hkcegwwwg5"><span class="c4">Cross-Validation</span></h2>
-    <h4 class="c6" id="h.h8q0hqpuyym"><span class="c5">Purpose</span></h4>
-    <p class="c2"><span>The purpose of cross validation is t</span><span class="c1">o determine the optimum values of the hyperparameters.</span></p>
-    <p class="c2"><span>Hyperparameters are </span><span class="c1">the parameters that are set for the algorithm.</span></p>
-    <h4 class="c6" id="h.4ppdy81q9qm5"><span class="c5">k-fold cross-validation</span></h4>
-    <p class="c2"><span class="c1">k is usually 5.</span></p>
-    <p class="c2 c15"><span class="c1"></span></p>
-    <h2 class="c8" id="h.r9s32jnwg1t2"><span class="c4">Regularization</span></h2>
-    <p class="c2"><span class="c1">Strength of regularization depends on the hyperparameter &lambda;.</span></p>
-    <p class="c2"><span class="c1">Regularization makes the model simpler, and spreads out the weights.</span></p>
-    <h4 class="c6" id="h.nlfknrw5d073"><span class="c5">L1 regularization</span></h4>
-    <p class="c2"><span class="c1 c11">[ insert formula ]</span></p>
-    <p class="c2"><span class="c1">Also called Lasso regression</span></p>
-    <h4 class="c6" id="h.bygdaau62vgc"><span class="c5">L2 regularization</span></h4>
-    <p class="c2"><span>is differentiable.</span><span class="c11">&nbsp;[ insert formula ]</span></p>
-    <p class="c2"><span class="c1">Also called Ridge regression.</span></p>
-    <h4 class="c6" id="h.7h2s7e9uoife"><span class="c5">Elastic net regularization</span></h4>
-    <p class="c2"><span>Is a combination of lasso and ridge regression. A hyperparameter (r) determines how much of each regression is used. </span><span class="c11">[ insert formula ]</span></p>
-    <p class="c2 c15"><span class="c1"></span></p>
-    <p class="c2"><span class="c1">Max </span></p>
-    <p class="c2"><span class="c1">Max norm constraints</span></p>
-    <p class="c2"><span class="c1">Dropout</span></p>
-    <p class="c2"><span class="c1">Noise</span></p>
-    <p class="c2"><span class="c1">Bias regularization</span></p>
-    <p class="c2"><span class="c1">per-layer regularization</span></p>
-    <h2 class="c8" id="h.441g8zed6ppz"><span class="c4">Gradient Descent</span></h2>
-    <p class="c2"><span class="c1">For every weight, the partial derivative of that weight with respect to the loss function is determined. Then, that weight is decreased by the product of the step size and the gradient (the partial derivative).</span></p>
-    <p class="c2"><span class="c1 c11">[ insert formula of above statement ]</span></p>
-    <h4 class="c6" id="h.obubqvsecfde"><span class="c5">Mini-batch gradient descent</span></h4>
-    <p class="c2 c15"><span class="c1"></span></p>
-    <p class="c2"><span class="c1">Numerical gradient</span></p>
-    <p class="c2"><span class="c1">Analytic gradient</span></p>
-    <p class="c2"><span class="c1">Mini-batch</span></p>
-    <p class="c2"><span class="c1">stochastic</span></p>
-    <p class="c2"><span class="c1">step size</span></p>
-    <h2 class="c8" id="h.8e95tcb8x7px"><span class="c4">Back-propagation</span></h2>
-    <h2 class="c8" id="h.460fkihq20vk"><span class="c4">Linear Classification</span></h2>
-    <p class="c2"><span class="c1">There are no hidden layers in the neural network.</span></p>
-    <h4 class="c6" id="h.wirufibgya9r"><span class="c5">Bias trick</span></h4>
-    <p class="c2"><span>Usually, the input vector x, to a neuron, is fed through the following formula: </span><span class="c9">y = Wx + b</span><span>, where W is a matrix; y and b are vectors. But the bias trick allows us to use only one matrix without adding a bias separately; by concatenating W with b which creates </span><span class="c9">W&rsquo;</span><span>and adding 1 to the bottom of the x vector, creating</span><span class="c9">&nbsp;x&rsquo;.</span><span>&nbsp;So, we get the same y as earlier by</span><span class="c9">&nbsp;y = W&rsquo; * x&rsquo;.</span></p>
-    <h4 class="c6" id="h.9vn6elcnwkqb"><span class="c5">Support vector machines</span></h4>
-    <h4 class="c6" id="h.9vn6elcnwkqb-1"><span class="c5">Softmax classifier</span></h4>
-    <p class="c2"><span class="c1">(Multinomial Logistic Regression)</span></p>
-    <p class="c2"><span class="c1 c11">[ insert formula ]</span></p>
-    <p class="c2 c15"><span class="c1"></span></p>
-    <h1 class="c26" id="h.vj9f20camcvs"><span class="c14">Related Topics</span></h1>
-    <h2 class="c8" id="h.xlehv8hw21ad"><span class="c4">Perceptron</span></h2>
-    <p class="c0"><span>A</span><span class="c16 c22">&nbsp;network consisting of inputs feeding into a single neuron </span><span>which has </span><span class="c16 c22">a step function as its activation function. Single p</span><span>erceptron wasn&rsquo;t enough to solve the XOR-problem. However, creating a hidden layer with two perceptrons can solve the problem.</span></p>
-    <h2 class="c8" id="h.u3l6b5nyhh14"><span class="c4">Activation functions</span></h2>
-    <p class="c2"><span class="c1">step function</span></p>
-    <p class="c2"><span class="c1">sigmoid function</span></p>
-    <p class="c2"><span class="c1">hyperbolic tangent function</span></p>
-    <p class="c2"><span class="c1">relu (rectified linear unit) function</span></p>
-    <h2 class="c8" id="h.i98ollver278"><span class="c4">Loss functions</span></h2>
-    <p class="c2"><span class="c1">Consist of two parts: the error and the regularization. (see Regularization)</span></p>
-    <h4 class="c6" id="h.t0cv1n1czan8"><span class="c5">Support vector machines loss function</span></h4>
-    <p class="c2"><span class="c1 c11">[ insert formula ]</span></p>
-    <p class="c2"><span class="c1 c11">Note: safety margin here is 1</span></p>
-    <h4 class="c6" id="h.g3foklfps5wm"><span class="c5">Multiclass SVM loss</span></h4>
-    <h4 class="c6" id="h.g3foklfps5wm-2"><span class="c5">Hinge loss</span></h4>
-    <h4 class="c6" id="h.mhz5ssbcueo5"><span class="c5">softmax</span></h4>
-    <h4 class="c6" id="h.mhz5ssbcueo5-3"><span class="c5">logistic regression</span></h4>
-    <h2 class="c8" id="h.qdngtzlobw9f"><span class="c4">Nearest neighbor classifier</span></h2>
-    <p class="c2"><span class="c1">Memorizes all data and labels. Predicts the label of the closest data point. (see L1 and L2 distance)</span></p>
-    <h2 class="c8" id="h.qt9qbjyo8ex0"><span>k-nearest neighbor classifier </span><span class="c21 c22 c24">2.1</span></h2>
-    <p class="c2"><span class="c1">Predicts based on classes of majority of labels of k nearest neighbors. Odd number is used for k to prevent stalemate vote.</span></p>
-    <p class="c2"><span class="c1">This classifier does no work to train.</span></p>
-    <h4 class="c6" id="h.2eamij9z248u"><span class="c5">L1, L2 distances</span></h4>
-    <p class="c2"><span class="c1">L1 distance: [ insert formula ]</span></p>
-    <p class="c2"><span class="c1">L2 distance: [ insert formula ]</span></p>
-    <p class="c2"><span class="c1">approximate nearest neighbor</span></p>
-    <h2 class="c8" id="h.o0pqsn0uu7d"><span class="c4">Viewpoints</span></h2>
-    <ul class="c19 lst-kix_hhnnp2o6wu1x-0 start">
-        <li class="c23"><span class="c1">algebraic</span></li>
-        <li class="c23"><span class="c1">visual</span></li>
-        <li class="c23"><span class="c1">geometric</span></li>
+    <p class="c37 title" id="h.af2d0hbx4i0d"><span class="c26 c38">Computer Vision Midterm Study Guide</span></p>
+    <p class="c35 subtitle"><span class="c18">Ibrahim Tigrek</span></p>
+    <h1 class="c31" id="h.abbw2mu8xyt2"><span class="c21">Important Topics</span></h1>
+    <h2 class="c1" id="h.z7hkcegwwwg5"><span>Cross-Validation</span><span class="c29 c12">2.2</span></h2>
+    <h4 class="c8" id="h.h8q0hqpuyym"><span class="c2">Purpose</span></h4>
+    <p class="c0"><span>The purpose of cross validation is t</span><span>o determine the optimum values of the hyperparameters, which are </span><span class="c5">the parameters that are set for the algorithm.</span></p>
+    <p class="c0"><span>k-</span><span>fold cross-validation is performed by dividing the training set into k sets, each one called a fold. Let&rsquo;s take k = 5, which is what is usually used. First, we train a model with a certain set of hyperparameters on the first 4 folds, and validate it (i.e. test it) on the 5th fold. Then we do the same, but this time the </span><span class="c25">validation set</span><span class="c5">&nbsp;is the 4th fold. Then again with the 3rd fold, and so on for all 5 possible combinations. For each of these iterations, we get a performance measure. We average these to get the final performance measure of the model with this specific set of hyperparameters.</span></p>
+    <p class="c0"><span class="c5">We do all of this again for another model, that has a different set of hyperparameters. And again for another model, and so on. Once we are satisfied with all the combinations of hyperparameters that we have validated, we choose the model that gave us the best overall performance measure. Then, and only then, do we use the test data, to test our final model.</span></p>
+    <p class="c0 c13"><span class="c5"></span></p>
+    <h2 class="c1" id="h.r9s32jnwg1t2"><span class="c6">Regularization</span></h2>
+    <p class="c0"><span class="c5">Strength of regularization depends on the hyperparameter &lambda;.</span></p>
+    <p class="c0"><span class="c5">Regularization makes the model simpler, and spreads out the weights.</span></p>
+    <p class="c0"><span class="c5">When building neural networks, it is recommended to start with as many neurons as the computer can handle, and apply regularization.</span></p>
+    <h4 class="c8" id="h.nlfknrw5d073"><span class="c2">L1 regularization</span></h4>
+    <p class="c0"><img src="images/image1.png"></p>
+    <p class="c0"><span class="c5">Also called Lasso regression. Lasso regression usually reduces useless features to zero.</span></p>
+    <h4 class="c8" id="h.bygdaau62vgc"><span class="c2">L2 regularization</span></h4>
+    <p class="c0"><span>is differentiable.</span></p>
+    <p class="c0"><img src="images/image2.png"></p>
+    <p class="c0"><span class="c5">Also called Ridge regression.</span></p>
+    <h4 class="c8" id="h.7h2s7e9uoife"><span class="c2">Elastic net regularization</span></h4>
+    <p class="c0"><span class="c5">Is a combination of lasso and ridge regression. A hyperparameter (r) determines how much of lasso and ridge are used. </span></p>
+    <p class="c0"><img src="images/image3.png"></p>
+    <p class="c0 c13"><span class="c5"></span></p>
+    <h4 class="c8" id="h.hv0e50arnb62"><span class="c2">Max norm constraints</span></h4>
+    <p class="c0"><span class="c5">Ensures that the norm of all of the weights is less than a specified bound. This is to prevent the neurons from becoming saturated.</span></p>
+    <h4 class="c8" id="h.r1tdi9pfjerc"><span class="c2">Dropout regularization</span></h4>
+    <p class="c0"><span class="c5">Starting with a fully-connected neural network, some neurons are killed off randomly based on a predefined probability. The &ldquo;killing&rdquo; of the neurons is done by cutting off all of the input to that neuron.</span></p>
+    <p class="c0"><span class="c5">Dropout regularization is used to weaken the strength of the network, thus making it harder for it to memorize the training data.</span></p>
+    <h4 class="c8" id="h.ns610z1abd2l"><span class="c2">Noise</span></h4>
+    <h4 class="c8" id="h.ns610z1abd2l-1"><span class="c2">Bias regularization</span></h4>
+    <h4 class="c8" id="h.ns610z1abd2l-2"><span class="c2">per-layer regularization</span></h4>
+    <p class="c0 c13"><span class="c5"></span></p>
+    <h2 class="c1" id="h.441g8zed6ppz"><span class="c6">Gradient Descent</span></h2>
+    <p class="c0"><span class="c5">For every weight, the partial derivative of the loss function with respect to that weight is determined. Then, that weight is decreased by the product of the step size and the gradient (the partial derivative).</span></p>
+    <p class="c0"><img src="images/image4.png"></p>
+    <h4 class="c8" id="h.obubqvsecfde"><span class="c2">Mini-batch gradient descent</span></h4>
+    <p class="c0"><span class="c5">A small group of data points (e.g. 128) are used to determine the gradient.</span></p>
+    <h4 class="c8" id="h.dy6v9bqvexpv"><span class="c2">Stochastic gradient descent</span></h4>
+    <p class="c0"><span class="c5">The gradient is calculated and a step is taken for single data point. The data point in question is chosen randomly from the full dataset.</span></p>
+    <p class="c0 c13"><span class="c5"></span></p>
+    <p class="c0"><span class="c5">Numerical gradient</span></p>
+    <p class="c0"><span class="c5">Analytic gradient</span></p>
+    <p class="c0"><span class="c5">Mini-batch</span></p>
+    <p class="c0"><span class="c5">stochastic</span></p>
+    <p class="c0"><span class="c5">step size</span></p>
+    <h2 class="c1" id="h.8e95tcb8x7px"><span class="c6">Back-propagation</span></h2>
+    <h4 class="c8" id="h.a642lt558l5g"><span class="c2">The Algorithm</span></h4>
+    <p class="c0"><span>Each node is examined independently, where only the input values, the output value, and the gradient propagating back to this node are necessary. Let&rsquo;s call our node N, and the two inputs x and y. Let&rsquo;s call the function at this node f, where f produces the output of this node from x and y, i.e. the output is f(x, y). Finally, let&rsquo;s call the gradient that has propagated back to N from the next node, d. It is our job to compute the gradients d</span><span class="c4">x</span><span>&nbsp;and d</span><span class="c4">y</span><span>, which are the gradients that N will propagate back to the nodes before it, where d</span><span class="c4">x</span><span>&nbsp;will go back along the path that brought x to N, and d</span><span class="c4">y</span><span class="c5">&nbsp;similarly for y.</span></p>
+    <p class="c0"><span class="c10">d</span><span class="c10 c4">x</span><span class="c3">&nbsp;= d * f&rsquo;(x)</span></p>
+    <p class="c0"><span class="c10">d</span><span class="c10 c4">y</span><span class="c3">&nbsp;= d * f&rsquo;(y)</span></p>
+    <p class="c0"><span>where </span><span class="c10">f&rsquo; </span><span>is the partial derivative of f with respect to the argument. If, when computing </span><span class="c10">f&rsquo;(x)</span><span class="c5">, the function contains the variable y, then the value of the input in that specific case is used.</span></p>
+    <h4 class="c8" id="h.a9thrik9xptw"><span class="c2">Patterns</span></h4>
+    <p class="c0"><span class="c5">On some gates (nodes) have simple interpretations.</span></p>
+    <h5 class="c15" id="h.99dlv3tzqom9"><span class="c23">Add gate</span></h5>
+    <p class="c0"><span class="c5">f(x, y) = x + y</span></p>
+    <p class="c0"><span class="c10">d</span><span class="c10 c4">x</span><span class="c3">&nbsp;= d</span></p>
+    <p class="c0"><span class="c10">d</span><span class="c10 c4">y</span><span class="c3">&nbsp;= d</span></p>
+    <h5 class="c15" id="h.2etqda1u6txk"><span class="c23">Max gate</span></h5>
+    <p class="c0"><span class="c5">f(x, y) = max(x, y), assuming x &gt; y,</span></p>
+    <p class="c0"><span class="c10">d</span><span class="c10 c4">x</span><span class="c3">&nbsp;= d</span></p>
+    <p class="c0"><span class="c10">d</span><span class="c10 c4">y</span><span class="c3">&nbsp;= 0</span></p>
+    <h5 class="c15" id="h.2ysxt030sj3t"><span class="c23">Multiply gate</span></h5>
+    <p class="c0"><span class="c5">f(x, y) = x * y</span></p>
+    <p class="c0"><span class="c10">d</span><span class="c10 c4">x</span><span class="c3">&nbsp;= d * y</span></p>
+    <p class="c0"><span class="c10">d</span><span class="c10 c4">y</span><span class="c10">&nbsp;= d * x</span></p>
+    <h2 class="c1" id="h.460fkihq20vk"><span>Linear Classification</span></h2>
+    <p class="c0"><span class="c5">There are no hidden layers in the neural network.</span></p>
+    <h4 class="c8" id="h.wirufibgya9r"><span class="c2">Bias trick</span></h4>
+    <p class="c0"><span>Usually, the input vector x, to a neuron, is fed through the following formula: </span><span class="c10">y = Wx + b</span><span>, where W is a matrix; y and b are vectors. But the bias trick allows us to use only one matrix without adding a bias separately; by concatenating W with b which creates </span><span class="c10">W&rsquo;</span><span>and adding 1 to the bottom of the x vector, creating</span><span class="c10">&nbsp;x&rsquo;.</span><span>&nbsp;So, we get the same y as earlier by</span><span class="c10">&nbsp;y = W&rsquo; * x&rsquo;.</span></p>
+    <h4 class="c8" id="h.3ncfkxhvl7tz"><span class="c2">Support vector machines</span></h4>
+    <p class="c0"><span class="c5 c9">[ explain SVM ]</span></p>
+    <h4 class="c8" id="h.9vn6elcnwkqb"><span class="c2">Softmax classifier</span></h4>
+    <p class="c0"><span class="c5">(Multinomial Logistic Regression)</span></p>
+    <p class="c0"><span class="c5 c9">[ insert formula ]</span></p>
+    <p class="c0"><span class="c5 c9">[ explain softmax ]</span></p>
+    <p class="c0"><span class="c5">When the number of labels is really large, a variation of softmax, called &ldquo;hierarchical softmax&rdquo;, is used, since it is faster to evaluate</span></p>
+    <p class="c0 c13"><span class="c5 c9"></span></p>
+    <p class="c0 c13"><span class="c5"></span></p>
+    <h1 class="c31" id="h.vj9f20camcvs"><span class="c21">Related Topics</span></h1>
+    <h2 class="c1" id="h.xlehv8hw21ad"><span class="c6">Perceptron</span></h2>
+    <p class="c7"><span>A</span><span class="c22">&nbsp;network consisting of inputs feeding into a single neuron </span><span>which has </span><span class="c22">a step function as its activation function. Single p</span><span>erceptron wasn&rsquo;t enough to solve the XOR-problem. However, creating a hidden layer with two perceptrons can solve the problem.</span></p>
+    <h2 class="c1" id="h.u3l6b5nyhh14"><span class="c6">Activation functions</span></h2>
+    <h4 class="c8" id="h.34edzig8hemd"><span class="c2">step function</span></h4>
+    <h4 class="c8" id="h.34edzig8hemd-3"><span class="c2">sigmoid function</span></h4>
+    <h4 class="c8" id="h.34edzig8hemd-4"><span class="c2">hyperbolic tangent function</span></h4>
+    <h4 class="c8" id="h.75wcoj949i5w"><span class="c2">relu (rectified linear unit) function</span></h4>
+    <p class="c0"><span class="c5">Most commonly used in neural networks.</span></p>
+    <h2 class="c1" id="h.i98ollver278"><span class="c6">Loss functions</span></h2>
+    <p class="c0"><span class="c5">Consist of two parts: the error and the regularization. (see Regularization)</span></p>
+    <h4 class="c8" id="h.t0cv1n1czan8"><span class="c2">Support vector machines loss function</span></h4>
+    <p class="c0"><span class="c5 c9">[ insert formula ]</span></p>
+    <p class="c0"><span class="c5 c9">Note: safety margin here is 1</span></p>
+    <h4 class="c8" id="h.g3foklfps5wm"><span class="c2">Multiclass SVM loss</span></h4>
+    <h4 class="c8" id="h.g3foklfps5wm-5"><span class="c2">Hinge loss</span></h4>
+    <h4 class="c8" id="h.mhz5ssbcueo5"><span class="c2">softmax</span></h4>
+    <h4 class="c8" id="h.mhz5ssbcueo5-6"><span class="c2">logistic regression</span></h4>
+    <h2 class="c1" id="h.qdngtzlobw9f"><span class="c6">Nearest neighbor classifier</span></h2>
+    <p class="c0"><span class="c5">Memorizes all data and labels. Predicts the label of the closest data point. (see L1 and L2 distance)</span></p>
+    <h2 class="c1" id="h.qt9qbjyo8ex0"><span>k-nearest neighbor classifier </span><span class="c12">2</span><span class="c12">.2</span><sup><a href="#cmnt1" id="cmnt_ref1">[a]</a></sup></h2>
+    <p class="c0"><span class="c5">KNN summary : - in image classification we start with the training set and labels and must predict labels on test sets</span></p>
+    <p class="c0"><span class="c5">- the KNN classifier predict labels based on the nearest neighbors:</span></p>
+    <p class="c0"><span class="c5">- distance metrics and K are the hyper-parameters choose this in the validation set.</span></p>
+    <p class="c0"><span class="c5">Two different distances 1 Manhattan : d(I1, I2) = &Sigma; (|I1-I2|)</span></p>
+    <p class="c0"><span class="c5">2- euclidean : d(I1,I2) = &Sigma; &radic; (I1-I2)2</span></p>
+    <p class="c0"><span class="c5">Predicts based on classes of majority of labels of k nearest neighbors. Odd number is used for k to prevent stalemate vote.</span></p>
+    <p class="c0"><span>This classifier does no work to train.</span></p>
+    <p class="c0 c13"><span class="c5"></span></p>
+    <h2 class="c1" id="h.ljjiaff9bjy6"><span class="c6">approximate nearest neighbor</span></h2>
+    <h2 class="c1" id="h.o0pqsn0uu7d"><span class="c6">Viewpoints</span></h2>
+    <ul class="c34 lst-kix_hhnnp2o6wu1x-0 start">
+        <li class="c27"><span class="c5">algebraic</span></li>
+        <li class="c27"><span class="c5">visual</span></li>
+        <li class="c27"><span class="c5">geometric</span></li>
     </ul>
-    <h2 class="c8" id="h.xswomyqns3tx"><span class="c4">Loss functions</span></h2>
-    <ul class="c19 lst-kix_mbzrtzx2wb9v-0 start">
-        <li class="c15 c23"><span class="c1"></span></li>
-    </ul>
-    <h2 class="c12" id="h.s6d5od5pkzlu"><span class="c4">Optimization</span></h2>
-    <h4 class="c6" id="h.c5re9lng8m7i"><span class="c5">Strategies</span></h4>
-    <p class="c2"><span>r</span><span class="c1">andom search</span></p>
-    <p class="c2"><span class="c1">random local search</span></p>
-    <p class="c2"><span class="c1">following the gradient</span></p>
-    <h2 class="c8" id="h.ekdtc5tubypw"><span class="c4">Activation functions</span></h2>
-    <p class="c2"><span class="c1">sigmoid</span></p>
-    <p class="c2"><span class="c1">relu</span></p>
-    <p class="c2"><span class="c1">hyperbolic tangent</span></p>
-    <p class="c2"><span class="c1">leaky relu</span></p>
-    <p class="c2"><span>maxout</span></p>
-    <h2 class="c8" id="h.8x454o2fohmq"><span class="c4">Single neuron classifiers</span></h2>
-    <p class="c2"><span class="c1">Binary softmax classifier</span></p>
-    <p class="c0"><span class="c1">Binary SVM classifier</span></p>
-    <h2 class="c8" id="h.7ju9njl5475l"><span class="c4">Preparing</span></h2>
-    <h4 class="c3" id="h.5k3i3zsc20uw"><span class="c5">Data preprocessing</span></h4>
-    <p class="c2"><span class="c1">mean subtraction</span></p>
-    <p class="c2"><span class="c1">normalization</span></p>
-    <p class="c2"><span class="c1">PCA</span></p>
-    <h4 class="c3" id="h.n8u481e84pk6"><span class="c5">Weight initialization</span></h4>
-    <p class="c2"><span class="c1">all zero initialization</span></p>
-    <p class="c2"><span class="c1">small random numbers</span></p>
-    <p class="c2"><span class="c1">calibrating variances</span></p>
-    <p class="c2"><span class="c1">sparse initialization</span></p>
-    <p class="c2"><span class="c1">bias initialization</span></p>
-    <p class="c2"><span class="c1">Batch normalization</span></p>
-    <h2 class="c12" id="h.dtp51kmgxf13"><span class="c4">Overfitting and Underfitting</span></h2>
-    <p class="c2"><span class="c1">High-bias</span></p>
-    <p class="c2"><span class="c1">High-variance</span></p>
-    <h2 class="c8" id="h.dt7nchdtvn2a"><span class="c4">Additional topics</span></h2>
-    <p class="c2"><span class="c1">L1 and L2 distance</span></p>
-    <p class="c2"><span class="c1">binary cross entropy</span></p>
-    <p class="c2"><span class="c1">L2 regression loss function</span></p>
-    <p class="c2"><span class="c1">Hierarchical softmax</span></p>
-    <p class="c2"><span class="c1">Momentum optimization</span></p>
-    <p class="c2"><span class="c1">Stratified sampling</span></p>
-    <p class="c2"><span class="c1">Vanishing gradient problem</span></p>
-    <p class="c2"><span class="c1">SIFT (scale-invariant feature transform)</span></p>
-    <p class="c2 c15"><span class="c1"></span></p>
-    <h1 class="c26" id="h.7jwdpdkaxu4t"><span class="c14">Appendix</span></h1>
-    <h2 class="c8" id="h.se5mth9nayk6"><span class="c4">Main resources</span></h2>
-    <h3 class="c13" id="h.j5ase9f9gh05"><span class="c17">Packt textbook Ch. 1 </span></h3>
-    <p class="c0"><span class="c7 c16"><a class="c10" href="https://www.google.com/url?q=https://subscription.packtpub.com/book/data/9781788830645/1/ch01lvl1sec02/computer-vision-in-the-wild&amp;sa=D&amp;ust=1574266320602000">https://subscription.packtpub.com/book/data/9781788830645/1/ch01lvl1sec02/computer-vision-in-the-wild</a></span></p>
-    <h3 class="c13" id="h.d3xip9nt8msq"><span class="c17">Stanford Neural Networks</span></h3>
-    <h4 class="c6" id="h.o9b4myvpyvxc"><span class="c5">Main page</span></h4>
-    <p class="c2"><span class="c21">2.1</span><span>&nbsp;</span><span class="c7"><a class="c10" href="https://www.google.com/url?q=http://cs231n.github.io/&amp;sa=D&amp;ust=1574266320603000">http://cs231n.github.io/</a></span></p>
-    <h4 class="c6" id="h.xj8p7u56q44h"><span class="c5">Classification</span></h4>
-    <p class="c2"><span class="c21">2.2</span><span>&nbsp;</span><span class="c7"><a class="c10" href="https://www.google.com/url?q=http://cs231n.github.io/classification/&amp;sa=D&amp;ust=1574266320604000">http://cs231n.github.io/classification/</a></span></p>
-    <h4 class="c6" id="h.cxtmt6uu70eb"><span class="c5">Linear classification</span></h4>
-    <p class="c2"><span class="c21">2.3 </span><span class="c7"><a class="c10" href="https://www.google.com/url?q=http://cs231n.github.io/linear-classify/&amp;sa=D&amp;ust=1574266320605000">http://cs231n.github.io/linear-classify/</a></span></p>
-    <h4 class="c6" id="h.og6hu97zmjo"><span class="c5">Optimization</span></h4>
-    <p class="c2"><span class="c21">2.4 </span><span class="c7"><a class="c10" href="https://www.google.com/url?q=http://cs231n.github.io/optimization-1/&amp;sa=D&amp;ust=1574266320606000">http://cs231n.github.io/optimization-1/</a></span></p>
-    <h4 class="c6" id="h.a0bztbttu3gy"><span class="c5">Back-propagation</span></h4>
-    <p class="c2"><span class="c21">2.5 </span><span class="c7"><a class="c10" href="https://www.google.com/url?q=http://cs231n.github.io/optimization-2/&amp;sa=D&amp;ust=1574266320607000">http://cs231n.github.io/optimization-2/</a></span></p>
-    <h4 class="c6" id="h.n765s5jmkrq2"><span class="c5">Neural networks part 1</span></h4>
-    <p class="c2"><span class="c21">2.6 </span><span class="c7"><a class="c10" href="https://www.google.com/url?q=http://cs231n.github.io/neural-networks-1/&amp;sa=D&amp;ust=1574266320608000">http://cs231n.github.io/neural-networks-1/</a></span></p>
-    <h4 class="c6" id="h.dhkwmbz4e6js"><span class="c5">Neural networks part 2</span></h4>
-    <p class="c2"><span class="c21">2.7 </span><span class="c7"><a class="c10" href="https://www.google.com/url?q=http://cs231n.github.io/neural-networks-2/&amp;sa=D&amp;ust=1574266320609000">http://cs231n.github.io/neural-networks-2/</a></span></p>
-    <h4 class="c6" id="h.h8r53vq8ynkt"><span class="c5">Neural networks part 3</span></h4>
-    <p class="c2"><span class="c21">2.8 </span><span class="c7"><a class="c10" href="https://www.google.com/url?q=http://cs231n.github.io/neural-networks-3/&amp;sa=D&amp;ust=1574266320610000">http://cs231n.github.io/neural-networks-3/</a></span></p>
-    <h3 class="c13" id="h.j3nb1l2cuezs"><span class="c17">Slides</span></h3>
-    <p class="c0"><span>Neural networks representation: non-linear hypotheses (Andrew Ng, ML wk 4 lecture 8)</span></p>
-    <h2 class="c8" id="h.x88b8s9lxwn5"><span class="c4">Additional resources</span></h2>
-    <h4 class="c3" id="h.s6sc9sy44g3e"><span class="c5">create your own neural network</span></h4>
-    <p class="c0"><span class="c1">playground.tensorflow.org</span></p>
-    <h4 class="c3" id="h.qxl6s05ast2l"><span class="c5">k-nearest neighbors demo</span></h4>
-    <p class="c0"><span class="c1">vision.stanford.edu</span></p>
-    <h4 class="c3" id="h.wv6enpe6t7r1"><span class="c5">Linear Classification Demo</span></h4>
-    <p class="c0"><span class="c7 c16"><a class="c10" href="https://www.google.com/url?q=http://vision.stanford.edu/teaching/cs231n-demos/linear-classify/&amp;sa=D&amp;ust=1574266320613000">http://vision.stanford.edu/teaching/cs231n-demos/linear-classify/</a></span></p>
-    <h4 class="c3" id="h.xybo2n6f742e"><span class="c5">Code Words (not sure how it&rsquo;s connected exactly)</span></h4>
-    <p class="c0"><span class="c1">codewords.recurse.com</span></p>
-    <h2 class="c12" id="h.29ls60ead64h"><span class="c4">Additional Topics</span></h2>
-    <p class="c0"><span class="c1">One-shot learning</span></p>
-    <p class="c0"><span class="c1">Neuron saturation</span></p>
+    <h2 class="c16" id="h.s6d5od5pkzlu"><span class="c6">Optimization</span></h2>
+    <h4 class="c8" id="h.c5re9lng8m7i"><span class="c2">Strategies</span></h4>
+    <p class="c0"><span>r</span><span class="c5">andom search</span></p>
+    <p class="c0"><span class="c5">random local search</span></p>
+    <p class="c0"><span class="c5">following the gradient</span></p>
+    <h2 class="c1" id="h.ekdtc5tubypw"><span class="c6">Activation functions</span></h2>
+    <p class="c0"><span class="c5">sigmoid</span></p>
+    <p class="c0"><span class="c5">relu</span></p>
+    <p class="c0"><span class="c5">hyperbolic tangent</span></p>
+    <p class="c0"><span class="c5">leaky relu</span></p>
+    <p class="c0"><span>maxout</span></p>
+    <h2 class="c1" id="h.8x454o2fohmq"><span class="c6">Single neuron classifiers</span></h2>
+    <p class="c0"><span class="c5">Binary softmax classifier</span></p>
+    <p class="c7"><span class="c5">Binary SVM classifier</span></p>
+    <h2 class="c1" id="h.7ju9njl5475l"><span class="c6">Preparing</span></h2>
+    <h2 class="c30" id="h.5k3i3zsc20uw"><span class="c6">Data preprocessing</span></h2>
+    <p class="c0"><span class="c5">mean subtraction</span></p>
+    <p class="c0"><span class="c5">normalization</span></p>
+    <p class="c0"><span class="c5">PCA (principal component analysis)</span></p>
+    <h2 class="c30" id="h.n8u481e84pk6"><span class="c6">Weight initialization</span></h2>
+    <h4 class="c8" id="h.8yjwux8cr6b5"><span class="c2">all zero initialization</span></h4>
+    <p class="c0"><span class="c5">All the weights are initialized to zero. The downside is that this will cause all of them to undergo the same parameter updates. This means there is no asymmetry among the weights, making the network struggle to learn.</span></p>
+    <h4 class="c8" id="h.2c5acm7or6c7"><span class="c2">small random numbers</span></h4>
+    <h4 class="c8" id="h.1mxrye7qj82z"><span class="c2">calibrating variances</span></h4>
+    <h4 class="c8" id="h.1mxrye7qj82z-7"><span class="c2">sparse initialization</span></h4>
+    <h2 class="c1" id="h.l6e9b9ing0hj"><span class="c6">Bias initialization</span></h2>
+    <p class="c0"><span class="c5">Zero-bias initialization works fine.</span></p>
+    <h2 class="c1" id="h.1mxrye7qj82z-8"><span class="c6">Batch normalization</span></h2>
+    <p class="c0"><span>Normalizing the output of a </span><span>layer</span><span class="c5">&nbsp;before passing it to the next layer. This is to ensure that the neurons don&rsquo;t get saturated.</span></p>
+    <h2 class="c16" id="h.dtp51kmgxf13"><span class="c6">Overfitting and Underfitting</span></h2>
+    <p class="c0"><span class="c5">The desired model is the one that is neither high bias nor high variance.</span></p>
+    <h4 class="c8" id="h.ezjt1trs5k1b"><span class="c2">High-bias</span></h4>
+    <p class="c0"><span class="c5">A model that is too simple is considered to have high bias and low variance. It is also called under-fitting.</span></p>
+    <h4 class="c8" id="h.lzb4ugqwfjyz"><span class="c2">High-variance</span></h4>
+    <p class="c0"><span class="c5">A model that is too complex is considered to have high variance and low bias. It is also called over-fitting.</span></p>
+    <h2 class="c1" id="h.53sil47c1hok"><span class="c6">Saturation of a neuron</span></h2>
+    <p class="c0"><span class="c5">This occurs when the output of a neuron is insensitive to the input, i.e. it is the same regardless of any changes to the input. This is considered a dead, or dying, neuron. This happens when the input value has become very large or very small (negative).</span></p>
+    <h2 class="c1" id="h.dt7nchdtvn2a"><span class="c6">Additional topics</span></h2>
+    <p class="c0"><span class="c5">L1 and L2 distance</span></p>
+    <p class="c0"><span class="c5">binary cross entropy</span></p>
+    <p class="c0"><span class="c5">L2 regression loss function</span></p>
+    <p class="c0"><span class="c5">Hierarchical softmax</span></p>
+    <p class="c0"><span class="c5">Momentum optimization</span></p>
+    <p class="c0"><span class="c5">Stratified sampling</span></p>
+    <p class="c0"><span class="c5">Vanishing gradient problem</span></p>
+    <p class="c0"><span class="c5">SIFT (scale-invariant feature transform)</span></p>
+    <p class="c0"><span class="c5">One-shot learning</span></p>
+    <h1 class="c31" id="h.7jwdpdkaxu4t"><span class="c21">Appendix</span></h1>
+    <h2 class="c1" id="h.se5mth9nayk6"><span class="c6">Main resources</span></h2>
+    <h3 class="c28" id="h.j5ase9f9gh05"><span class="c24">Packt textbook Ch. 1 </span></h3>
+    <p class="c7"><span class="c19"><a class="c14" href="https://www.google.com/url?q=https://subscription.packtpub.com/book/data/9781788830645/1/ch01lvl1sec02/computer-vision-in-the-wild&amp;sa=D&amp;ust=1574271993567000">https://subscription.packtpub.com/book/data/9781788830645/1/ch01lvl1sec02/computer-vision-in-the-wild</a></span></p>
+    <h3 class="c28" id="h.d3xip9nt8msq"><span class="c24">Stanford Neural Networks</span></h3>
+    <h4 class="c8" id="h.o9b4myvpyvxc"><span class="c2">Main page</span></h4>
+    <p class="c0"><span class="c12">2.1</span><span>&nbsp;</span><span class="c20"><a class="c14" href="https://www.google.com/url?q=http://cs231n.github.io/&amp;sa=D&amp;ust=1574271993568000">http://cs231n.github.io/</a></span></p>
+    <h4 class="c8" id="h.xj8p7u56q44h"><span class="c2">Classification</span></h4>
+    <p class="c0"><span class="c12">2.2</span><span>&nbsp;</span><span class="c20"><a class="c14" href="https://www.google.com/url?q=http://cs231n.github.io/classification/&amp;sa=D&amp;ust=1574271993569000">http://cs231n.github.io/classification/</a></span></p>
+    <h4 class="c8" id="h.cxtmt6uu70eb"><span class="c2">Linear classification</span></h4>
+    <p class="c0"><span class="c12">2.3 </span><span class="c20"><a class="c14" href="https://www.google.com/url?q=http://cs231n.github.io/linear-classify/&amp;sa=D&amp;ust=1574271993569000">http://cs231n.github.io/linear-classify/</a></span></p>
+    <h4 class="c8" id="h.og6hu97zmjo"><span class="c2">Optimization</span></h4>
+    <p class="c0"><span class="c12">2.4 </span><span class="c20"><a class="c14" href="https://www.google.com/url?q=http://cs231n.github.io/optimization-1/&amp;sa=D&amp;ust=1574271993570000">http://cs231n.github.io/optimization-1/</a></span></p>
+    <h4 class="c8" id="h.a0bztbttu3gy"><span class="c2">Back-propagation</span></h4>
+    <p class="c0"><span class="c12">2.5 </span><span class="c20"><a class="c14" href="https://www.google.com/url?q=http://cs231n.github.io/optimization-2/&amp;sa=D&amp;ust=1574271993571000">http://cs231n.github.io/optimization-2/</a></span></p>
+    <h4 class="c8" id="h.n765s5jmkrq2"><span class="c2">Neural networks part 1</span></h4>
+    <p class="c0"><span class="c12">2.6 </span><span class="c20"><a class="c14" href="https://www.google.com/url?q=http://cs231n.github.io/neural-networks-1/&amp;sa=D&amp;ust=1574271993571000">http://cs231n.github.io/neural-networks-1/</a></span></p>
+    <h4 class="c8" id="h.dhkwmbz4e6js"><span class="c2">Neural networks part 2</span></h4>
+    <p class="c0"><span class="c12">2.7 </span><span class="c20"><a class="c14" href="https://www.google.com/url?q=http://cs231n.github.io/neural-networks-2/&amp;sa=D&amp;ust=1574271993572000">http://cs231n.github.io/neural-networks-2/</a></span></p>
+    <h4 class="c8" id="h.h8r53vq8ynkt"><span class="c2">Neural networks part 3</span></h4>
+    <p class="c0"><span class="c12">2.8 </span><span class="c20"><a class="c14" href="https://www.google.com/url?q=http://cs231n.github.io/neural-networks-3/&amp;sa=D&amp;ust=1574271993572000">http://cs231n.github.io/neural-networks-3/</a></span></p>
+    <h3 class="c28" id="h.j3nb1l2cuezs"><span class="c24">Slides</span></h3>
+    <p class="c7"><span>Neural networks representation: non-linear hypotheses (Andrew Ng, ML wk 4 lecture 8)</span></p>
+    <h2 class="c1" id="h.x88b8s9lxwn5"><span class="c6">Additional resources</span></h2>
+    <h4 class="c11" id="h.s6sc9sy44g3e"><span class="c2">create your own neural network</span></h4>
+    <p class="c7"><span class="c5">playground.tensorflow.org</span></p>
+    <h4 class="c11" id="h.qxl6s05ast2l"><span class="c2">k-nearest neighbors demo</span></h4>
+    <p class="c7"><span class="c5">vision.stanford.edu</span></p>
+    <h4 class="c11" id="h.wv6enpe6t7r1"><span class="c2">Linear Classification Demo</span></h4>
+    <p class="c7"><span class="c19"><a class="c14" href="https://www.google.com/url?q=http://vision.stanford.edu/teaching/cs231n-demos/linear-classify/&amp;sa=D&amp;ust=1574271993573000">http://vision.stanford.edu/teaching/cs231n-demos/linear-classify/</a></span></p>
+    <h4 class="c11" id="h.xybo2n6f742e"><span class="c2">Code Words (not sure how it&rsquo;s connected exactly)</span></h4>
+    <p class="c7"><span class="c5">codewords.recurse.com</span></p>
+    <p class="c7 c13"><span class="c5"></span></p>
     <div>
-        <p class="c2 c15"><span class="c1"></span></p>
+        <p class="c0 c13"><span class="c5"></span></p>
+    </div>
+    <div class="c33">
+        <p class="c32"><a href="#cmnt_ref1" id="cmnt1">[a]</a><span class="c17">hey man, go ahead and write in the doc. you don&#39;t have to comment :)</span></p>
     </div>
 </body>
 
