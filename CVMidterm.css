@@ -1,4 +1,4 @@
-    .lst-kix_k90m6otahfkd-7>li:before {
+.lst-kix_k90m6otahfkd-7>li:before {
         content: "\0025cb  "
     }
 
@@ -1304,40 +1304,7 @@
         padding: 0
     }
 
-    .c6 {
-        margin-left: 18pt;
-        padding-top: 0pt;
-        padding-bottom: 0pt;
-        line-height: 1.15;
-        page-break-after: avoid;
-        orphans: 2;
-        widows: 2;
-        text-align: left
-    }
-
-    .c13 {
-        margin-left: 18pt;
-        padding-top: 12pt;
-        padding-bottom: 0pt;
-        line-height: 1.15;
-        page-break-after: avoid;
-        orphans: 2;
-        widows: 2;
-        text-align: left
-    }
-
-    .c8 {
-        margin-left: 27pt;
-        padding-top: 12pt;
-        padding-bottom: 3pt;
-        line-height: 1.15;
-        page-break-after: avoid;
-        orphans: 2;
-        widows: 2;
-        text-align: left
-    }
-
-    .c18 {
+    .c35 {
         padding-top: 0pt;
         text-indent: 9pt;
         padding-bottom: 24pt;
@@ -1348,7 +1315,7 @@
         text-align: right
     }
 
-    .c26 {
+    .c31 {
         margin-left: 45pt;
         padding-top: 18pt;
         padding-bottom: 4pt;
@@ -1359,18 +1326,7 @@
         text-align: left
     }
 
-    .c12 {
-        margin-left: 27pt;
-        padding-top: 15pt;
-        padding-bottom: 3pt;
-        line-height: 1.15;
-        page-break-after: avoid;
-        orphans: 2;
-        widows: 2;
-        text-align: left
-    }
-
-    .c3 {
+    .c11 {
         margin-left: 18pt;
         padding-top: 10pt;
         padding-bottom: 0pt;
@@ -1381,7 +1337,7 @@
         text-align: left
     }
 
-    .c23 {
+    .c27 {
         margin-left: 36pt;
         padding-top: 0pt;
         padding-left: 0pt;
@@ -1392,7 +1348,7 @@
         text-align: left
     }
 
-    .c25 {
+    .c37 {
         padding-top: 0pt;
         text-indent: 9pt;
         padding-bottom: 10pt;
@@ -1403,7 +1359,92 @@
         text-align: center
     }
 
-    .c0 {
+    .c1 {
+        margin-left: 27pt;
+        padding-top: 12pt;
+        padding-bottom: 3pt;
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c30 {
+        margin-left: 27pt;
+        padding-top: 10pt;
+        padding-bottom: 3pt;
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c8 {
+        margin-left: 18pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c16 {
+        margin-left: 27pt;
+        padding-top: 15pt;
+        padding-bottom: 3pt;
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c28 {
+        margin-left: 18pt;
+        padding-top: 12pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c17 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 11pt;
+        font-family: "Arial";
+        font-style: normal
+    }
+
+    .c23 {
+        color: #666666;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 11pt;
+        font-family: "Georgia";
+        font-style: normal
+    }
+
+    .c3 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 11pt;
+        font-family: "Courier New";
+        font-style: normal
+    }
+
+    .c7 {
         padding-top: 0pt;
         text-indent: 9pt;
         padding-bottom: 10pt;
@@ -1413,47 +1454,7 @@
         text-align: left
     }
 
-    .c4 {
-        color: #000000;
-        font-weight: 700;
-        text-decoration: none;
-        vertical-align: baseline;
-        font-size: 15pt;
-        font-family: "Lora";
-        font-style: normal
-    }
-
-    .c2 {
-        padding-top: 0pt;
-        text-indent: 9pt;
-        padding-bottom: 0pt;
-        line-height: 1.15;
-        orphans: 2;
-        widows: 2;
-        text-align: left
-    }
-
     .c5 {
-        color: #666666;
-        font-weight: 700;
-        text-decoration: none;
-        vertical-align: baseline;
-        font-size: 12pt;
-        font-family: "Lora";
-        font-style: normal
-    }
-
-    .c14 {
-        color: #000000;
-        font-weight: 700;
-        text-decoration: none;
-        vertical-align: baseline;
-        font-size: 18pt;
-        font-family: "Lora";
-        font-style: normal
-    }
-
-    .c1 {
         color: #000000;
         font-weight: 400;
         text-decoration: none;
@@ -1463,7 +1464,67 @@
         font-style: normal
     }
 
-    .c17 {
+    .c2 {
+        color: #666666;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: "Lora";
+        font-style: normal
+    }
+
+    .c19 {
+        -webkit-text-decoration-skip: none;
+        color: #1155cc;
+        font-weight: 400;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        font-size: 11pt;
+        font-family: "Georgia"
+    }
+
+    .c0 {
+        padding-top: 0pt;
+        text-indent: 9pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c6 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 15pt;
+        font-family: "Lora";
+        font-style: normal
+    }
+
+    .c21 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 18pt;
+        font-family: "Lora";
+        font-style: normal
+    }
+
+    .c15 {
+        padding-top: 12pt;
+        padding-bottom: 4pt;
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c24 {
         color: #000000;
         font-weight: 700;
         text-decoration: none;
@@ -1474,15 +1535,7 @@
     }
 
     .c29 {
-        font-weight: 700;
-        text-decoration: none;
-        vertical-align: baseline;
-        font-size: 24pt;
-        font-family: "Lora";
-        font-style: normal
-    }
-
-    .c24 {
+        color: #000000;
         font-weight: 700;
         text-decoration: none;
         font-size: 15pt;
@@ -1490,71 +1543,92 @@
         font-style: normal
     }
 
-    .c28 {
-        text-decoration: none;
-        vertical-align: baseline;
-        font-size: 11pt;
+    .c38 {
+        color: #000000;
+        font-weight: 700;
+        font-size: 24pt;
+        font-family: "Lora";
         font-style: normal
     }
 
-    .c7 {
+    .c18 {
+        font-size: 11pt;
+        font-family: "Georgia";
+        font-style: italic;
+        color: #999999;
+        font-weight: 400
+    }
+
+    .c32 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c20 {
         text-decoration-skip-ink: none;
         -webkit-text-decoration-skip: none;
         color: #1155cc;
         text-decoration: underline
     }
 
-    .c16 {
-        font-weight: 400;
+    .c22 {
         font-size: 11pt;
-        font-family: "Georgia"
+        font-family: "Georgia";
+        color: #000000;
+        font-weight: 400
     }
 
-    .c27 {
+    .c36 {
         background-color: #ffffff;
         max-width: 468pt;
         padding: 72pt 72pt 72pt 72pt
     }
 
-    .c19 {
-        padding: 0;
-        margin: 0
-    }
-
-    .c30 {
+    .c26 {
         text-decoration: none;
         vertical-align: baseline
     }
 
-    .c20 {
-        font-style: italic;
-        color: #999999
+    .c33 {
+        border: 1px solid black;
+        margin: 5px
     }
 
-    .c9 {
-        font-weight: 400;
-        font-family: "Courier New"
-    }
-
-    .c10 {
+    .c14 {
         color: inherit;
         text-decoration: inherit
     }
 
-    .c21 {
+    .c34 {
+        padding: 0;
+        margin: 0
+    }
+
+    .c10 {
+        font-weight: 400;
+        font-family: "Courier New"
+    }
+
+    .c4 {
+        vertical-align: sub
+    }
+
+    .c12 {
         vertical-align: super
     }
 
-    .c11 {
-        background-color: #ffff00
-    }
-
-    .c22 {
-        color: #000000
-    }
-
-    .c15 {
+    .c13 {
         height: 11pt
+    }
+
+    .c25 {
+        font-style: italic
+    }
+
+    .c9 {
+        background-color: #ffff00
     }
 
     .title {
